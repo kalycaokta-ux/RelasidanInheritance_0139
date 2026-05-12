@@ -2,6 +2,14 @@
 #define IBU_H
 #include <vector>
 
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+class anak;
+
 class ibu {
 public:
     string nama;
@@ -17,6 +25,9 @@ public:
     void tambahAnak(anak*);
     void cetakAnak();
 };
+
+#include "ibu.h"
+#include "anak.h"
 
 void ibu::tambahAnak(anak* pAnak) {
     daftar_anak.push_back(pAnak);
@@ -35,3 +46,4 @@ void ibu::cetakAnak() {
 
     cout << endl;
 }
+#endif
